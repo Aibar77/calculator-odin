@@ -10,29 +10,29 @@
 </head>
 <body>
   <div class="calculator">  
-    <div class="output">
-      <div class="output-prev"></div>
-      <div class="output-curren"></div>
+    <div  class="output">
+      <div data-prev class="output-prev"></div>
+      <div data-current class="output-curren"></div>
     </div>
     <div class="buttons">
-      <input type="button" value="CLEAR" class="clear">
-      <input type="button" value="DELETE" class="delete">
-      <input type="button" value="7">
-      <input type="button" value="8">
-      <input type="button" value="9">
-      <input type="button" value="÷">
-      <input type="button" value="4">
-      <input type="button" value="5">
-      <input type="button" value="6">
-      <input type="button" value="*">
-      <input type="button" value="1">
-      <input type="button" value="2">
-      <input type="button" value="3">
-      <input type="button" value="-">
-      <input type="button" value=".">
-      <input type="button" value="0">
-      <input type="button" value="=">
-      <input type="button" value="+">
+      <input data-action="clear" type="button" value="CLEAR" class="clear">
+      <input data-action="delete" type="button" value="DELETE" class="delete">
+      <input data-number type="button" value="7">
+      <input data-number type="button" value="8">
+      <input data-number type="button" value="9">
+      <input data-action="divide" type="button" value="÷">
+      <input data-number type="button" value="4">
+      <input data-number type="button" value="5">
+      <input data-number type="button" value="6">
+      <input data-action="multiply" type="button" value="*">
+      <input data-number type="button" value="1">
+      <input data-number type="button" value="2">
+      <input data-number type="button" value="3">
+      <input data-action="subtract" type="button" value="-">
+      <input data-action="decimal" type="button" value=".">
+      <input data-number type="button" value="0">
+      <input data-action="calculate" type="button" value="=">
+      <input data-action="add" type="button" value="+">
     </div>
   </div>
 </body>
