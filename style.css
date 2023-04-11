@@ -1,0 +1,106 @@
+:root {
+  --primary-light: #f6f6f6;
+  --primary-hover: #eeeeee;
+  --primary-active: #aaa;
+  --primary-dark: #333;
+  --red-color: #ffaaaa;
+  --red-m-color: #e59292;
+  --red-x-color: #da7f7f;
+  --violet-color: #aaaaff;
+  --violet-m-color: #9797e7;
+  --violet-x-color: #7c7ccb;
+}
+*,*::after,*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-light);
+}
+input {
+  font-size: inherit;
+  outline: none;
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.calculator {
+  width: 500px;
+  height: 600px;
+  margin: 20px auto;
+  background-color: var(--primary-active);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 1fr;
+  border: 3px solid var(--primary-dark);
+  border-radius: 10px;
+  gap: 10px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 7px;
+}
+input[type="button"] {
+  font-size: 20px;
+}
+
+input {
+  background-color: #f6f6f6;
+  border: 2px solid;
+}
+input:hover {
+  background-color: #e7e6e6;
+}
+input:active {
+  background-color: #c4c2c2;
+}
+.clear, .delete {
+  grid-column: span 2;
+}
+.clear {
+  background-color: var(--red-color);
+}
+.clear:hover {
+  background-color: var(--red-m-color);
+}
+.clear:active {
+  background-color: var(--red-x-color);
+}
+.delete {
+  background-color: var(--violet-color);
+}
+.delete:hover {
+  background-color: var(--violet-m-color);
+}
+.delete:active {
+  background-color: var(--violet-x-color);
+}
+.output {
+  background-color: var(--primary-hover);
+  border: 2px solid;
+  border-radius: 7px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.output-prev {
+  font-size: 2rem;
+  color: #969494;
+  word-wrap: break-word;
+}
+.output-curren {
+  font-size: 3rem;
+}
+
